@@ -1,11 +1,11 @@
-import "../components/SpillKits.css";
-import Footer from "./Footer";
-import BookKit from "../components/BookKit";
-import HeroPages from "./HeroPages";
-import { Link } from "react-router-dom";
-import ChemicalKit from "../images/spillkit/chemicalKit.png";
-import OilKit from "../images/spillkit/oilKit.png";
-import UniversalKit from "../images/spillkit/universalKit.png";
+import "../components/SpillKits.css"
+import Footer from "./Footer"
+import BookKit from "../components/BookKit"
+import HeroPages from "./HeroPages"
+import { Link } from "react-router-dom"
+import ChemicalKit from "../images/spillkit/chemical-spillkit.png"
+import OilKit from "../images/spillkit/oil-spillkit.png"
+import UniversalKit from "../images/spillkit/universal-spillkit.png"
 
 function SpillKits() {
   return (
@@ -20,7 +20,7 @@ function SpillKits() {
                 <h2>Effective Solutions for Controlling and Cleaning Spills</h2>
               </div>
               <div className="product-grid">
-                <Link onClick={() => window.scrollTo(0, 0)} to="/spillkits/oil">
+                <Link onClick={() => window.scrollTo(0, 0)} to="#">
                   <div className="pro undefined">
                     <div className="pro__img">
                       <img src={OilKit} alt="" />
@@ -35,10 +35,7 @@ function SpillKits() {
                     </div>
                   </div>
                 </Link>
-                <Link
-                  onClick={() => window.scrollTo(0, 0)}
-                  to="/spillkits/chemical"
-                >
+                <Link onClick={() => window.scrollTo(0, 0)} to="#">
                   <div className="pro reversed-pro">
                     <div className="pro__img">
                       <img src={ChemicalKit} alt="" />
@@ -54,10 +51,7 @@ function SpillKits() {
                     </div>
                   </div>
                 </Link>
-                <Link
-                  onClick={() => window.scrollTo(0, 0)}
-                  to="/spillkits/universal"
-                >
+                <Link onClick={() => window.scrollTo(0, 0)} to="#">
                   <div className="pro undefined">
                     <div className="pro__img">
                       <img src={UniversalKit} alt="" />
@@ -79,7 +73,7 @@ function SpillKits() {
         <Footer />
       </section>
     </>
-  );
+  )
 }
 
-export default SpillKits;
+export default SpillKits
